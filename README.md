@@ -13,3 +13,9 @@ Google Vision API Sample code to recognize a face in image
 # predict.py
 Google ML Engine Sample code to predict who he/she is.
 
+# How to use it
+1. Install python packages needed. (requirements.txt)
+2. Install motion application : sudo apt-get install motion (if you use debian)
+3. Add this python code (alert_motion.py) to /etc/motion/motion.conf (on_event area)
+4. python alert_motion.py -t <telegram_id> -i <image_number> 
+   (Default images are located in /var/lib/motion )
