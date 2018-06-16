@@ -141,7 +141,7 @@ class MotionAlert(object):
             image_file_path: Path to image to upload on local machine.
             bucket_name: Name of the GCS bucket.
         """
-        project = "tribal-mapper-199302"
+        project = "<GCP_project_id>"
         credentials = service_account.Credentials.from_service_account_file('~/gcp-service-account.json')
         client = storage.Client(project, credentials)
 
